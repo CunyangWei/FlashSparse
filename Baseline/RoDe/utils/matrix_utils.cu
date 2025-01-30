@@ -16,9 +16,9 @@
 #include <cstdint>
 #include <cstring>
 #include <numeric>
-
-// #include "glog/logging.h"
-#include "/home/ae123/module/local/include/glog/logging.h"
+#define GLOG_USE_GLOG_EXPORT
+#include <glog/logging.h>
+//#include "/home/ae123/module/local/include/glog/logging.h"
 #include "matrix_utils.h"
 
 

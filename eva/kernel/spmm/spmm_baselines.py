@@ -10,7 +10,7 @@ import csv
 import pandas as pd
 import time
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
             
 '''
@@ -61,9 +61,11 @@ if __name__ == "__main__":
     epoches = 10
     current_dir = os.path.dirname(__file__)
     project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+    data_dir = "/home/cunyang/workspace/"
     
     #result path
-    file_name = project_dir + '/result/Baseline/spmm/base_spmm_f32_n' + str(dimN) + '.csv'
+    # file_name = project_dir + '/result/Baseline/spmm/base_spmm_f32_n' + str(dimN) + '.csv'
+    file_name = project_dir + '/result/Baseline/spmm/advisor_tcgnn_gespmm_f32_n' + str(dimN) + '.csv'
     head = ['dataSet', 'num_nodes', 'num_edges', 'advisor', 'tcgnn', 'gespmm']
     with open(file_name, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
@@ -71,8 +73,9 @@ if __name__ == "__main__":
     
     start_time = time.time()
     # Traverse each dataset
-    df = pd.read_csv(project_dir + '/dataset/data_filter.csv')
-    df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_256.csv')
+    # df = pd.read_csv(project_dir + '/dataset/data_filter.csv')
+    # df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_256.csv')
+    df = pd.read_csv(project_dir + '/dataset/data.csv')
     
     for index, row in df.iterrows():
         res_temp = []
@@ -81,8 +84,10 @@ if __name__ == "__main__":
         res_temp.append(row.iloc[2])
 
         #Dataset path
-        data_path =  project_dir + '/dataset/' + row.iloc[0] + '.npz'
-        
+        # data_path =  project_dir + '/dataset/' + row.iloc[0] + '.npz'
+        data_path =  data_dir + row.iloc[0] + "/" + row.iloc[0] + '.npz'
+        # data_path =  data_dir + "tcgnn-ae-graphs" + "/" + row.iloc[0] + '.npz'
+        print(data_path)
         # advisor
         # if row.iloc[0] not in []:
         #     spmm_advisor = advisor_test(row.iloc[0], dimN, epoches, data_path)
@@ -116,5 +121,5 @@ if __name__ == "__main__":
     execution_time = end_time - start_time
 
     # Record execution time.
-    with open("execution_time_base.txt", "a") as file:
-        file.write("Baseline-" + str(dimN) + "-" + str(round(execution_time/60,2)) + " minutes\n")
+    # with open("execution_time_base.txt", "a") as file:
+    #     file.write("Baseline-" + str(dimN) + "-" + str(round(execution_time/60,2)) + " minutes\n")

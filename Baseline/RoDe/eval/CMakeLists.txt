@@ -34,6 +34,8 @@ target_link_libraries(eval_sddmm_f32_n128 sputnik_sddmm utils RoDe_sddmm)
 add_executable(eval_sddmm_f32_n256 eval_sddmm_f32_n256.cu)
 target_link_libraries(eval_sddmm_f32_n256 sputnik_sddmm utils RoDe_sddmm)
 
-
 add_executable(get_matrix_info get_matrix_info.cu)
 target_link_libraries(get_matrix_info utils)
+
+add_executable(eval_spmm_f32_inputN eval_spmm_f32_inputN.cu)
+target_link_libraries(eval_spmm_f32_inputN utils sputnik_spmm cuSPARSE_spmm RoDe_spmm)

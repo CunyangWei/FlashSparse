@@ -2,7 +2,7 @@ import os.path as osp
 import argparse
 import torch
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import csv
 import pandas as pd
 import time
@@ -15,14 +15,17 @@ import time
 
 current_dir = os.path.dirname(__file__)
 project_dir = os.path.dirname(os.path.dirname(current_dir))
+data_dir = "/home/cunyang/workspace/"
 
-df = pd.read_csv(project_dir + '/dataset/data_filter.csv')
-df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_256.csv')
+df = pd.read_csv(project_dir + '/dataset/data.csv')
+# df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_256.csv')
 
 dimN = int(sys.argv[1])
 print('dimN: ' + str(dimN))
 
-file_name = project_dir + '/result/Baseline/spmm/dtc_spmm_f32_n' + str(dimN) + '.csv'
+# file_name = project_dir + '/result/Baseline/spmm/dtc_spmm_f32_n' + str(dimN) + '.csv'
+file_name = project_dir + '/result/Baseline/spmm/my_dtc_spmm_f32_n' + str(dimN) + '.csv'
+
 
 head = ['dataSet', 'num_nodes', 'num_edges', 'dtc']
 with open(file_name, 'w', newline='') as csvfile:
@@ -40,7 +43,7 @@ for index, row in df.iterrows():
     ## Load matrix from files.
     data = row.iloc[0]
     # Set your own path to the dataset.
-    path = osp.join(project_dir, 'dataset', data + ".npz") #4090
+    path = osp.join(data_dir, data, data + ".npz") #4090
     matrix = DTC_dataset(path)
     num_rows = matrix.num_nodes
     num_nnz = matrix.num_edges
@@ -89,5 +92,5 @@ end_time = time.time()
 execution_time = end_time - start_time
 
 # Record execution time.
-with open("execution_time_base.txt", "a") as file:
-    file.write("Baseline-" + str(dimN) + "-" + str(round(execution_time/60,2)) + " minutes\n")
+# with open("execution_time_base.txt", "a") as file:
+#     file.write("Baseline-" + str(dimN) + "-" + str(round(execution_time/60,2)) + " minutes\n")

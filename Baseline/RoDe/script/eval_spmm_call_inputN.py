@@ -9,7 +9,7 @@ import sys
 
 current_dir = os.path.dirname(__file__)
 project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-data_dir = "/home/cunyang/workspace/"
+data_dir = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/dataset/')
 inputN = int(sys.argv[1])
 
 # df = pd.read_csv(project_dir + '/dataset/data_filter.csv')

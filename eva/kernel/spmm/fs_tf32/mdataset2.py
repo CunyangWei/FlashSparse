@@ -14,7 +14,7 @@ class dataSet_tf32(torch.nn.Module):
     def __init__(self, data, dimN, partsize, data_path, window, wide):
         super(dataSet_tf32, self).__init__()
 
-        self.graph = np.load(data_path + '/' + data +'.npz')
+        self.graph = np.load(data_path + '/' + data + '/' + data +'.npz')
         self.num_features = dimN
         self.init_edges(partsize, window, wide)
         self.init_embedding()
@@ -59,7 +59,7 @@ class dataSet_tf32_balance(torch.nn.Module):
     def __init__(self, data, dimN, partsize, data_path, window, wide):
         super(dataSet_tf32_balance, self).__init__()
 
-        self.graph = np.load(data_path + '/' + data +'.npz')
+        self.graph = np.load(data_path + '/' + data + '/' + data +'.npz')
         self.num_features = dimN
         self.init_edges(partsize, window, wide)
         self.init_embedding()

@@ -8,7 +8,7 @@ import time
 
 current_dir = os.path.dirname(__file__)
 project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-data_dir = "/home/cunyang/workspace/"
+data_dir = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/')
 
 # df = pd.read_csv(project_dir + '/dataset/data_filter.csv')
 # df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_128.csv')

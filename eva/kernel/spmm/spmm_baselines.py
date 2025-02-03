@@ -61,7 +61,7 @@ if __name__ == "__main__":
     epoches = 10
     current_dir = os.path.dirname(__file__)
     project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-    data_dir = "/home/cunyang/workspace/"
+    data_dir = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/dataset/')
     
     #result path
     # file_name = project_dir + '/result/Baseline/spmm/base_spmm_f32_n' + str(dimN) + '.csv'

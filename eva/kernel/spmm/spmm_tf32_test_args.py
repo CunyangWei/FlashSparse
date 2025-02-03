@@ -52,10 +52,11 @@ if __name__ == "__main__":
     project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
     
     #Dataset path
-    data_path =  project_dir + '/dataset'
+    # data_path =  project_dir + '/dataset'
+    data_path = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/dataset/')
     
     #result path
-    file_name = project_dir + '/result/FlashSparse/spmm/spmm_tf32_' + str(dimN) + '.csv'
+    file_name = project_dir + '/result/FlashSparse/spmm/flashsparse_tf32_' + str(dimN) + '.csv'
     head = ['dataSet', 'num_nodes', 'num_edges', '16_1', '8_1', '8_1_balance', '8_1_map']
     with open(file_name, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
@@ -63,8 +64,8 @@ if __name__ == "__main__":
 
     start_time = time.time()
     # Traverse each dataset
-    df = pd.read_csv(project_dir + '/dataset/data_filter.csv')
-    df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_256.csv')
+    df = pd.read_csv(project_dir + '/dataset/data.csv')
+    # df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_256.csv')
     
     for index, row in df.iterrows():
         # if row.iloc[0] in ori:

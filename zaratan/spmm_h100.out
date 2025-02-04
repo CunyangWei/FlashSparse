@@ -1,0 +1,8 @@
+/var/spool/slurmd/job10308472/slurm_script: line 13: /home/cunyang/spmm/spmm-venv/bin/activate: No such file or directory
+Loading cuda/gcc/11.3.0/zen2/12.3.0
+  Loading requirement: gcc/11.3.0
+/var/spool/slurmd/job10308472/slurm_script: line 20: python: command not found
+/var/spool/slurmd/job10308472/slurm_script: line 25: python: command not found
+/var/spool/slurmd/job10308472/slurm_script: line 29: python: command not found
+/var/spool/slurmd/job10308472/slurm_script: line 33: python: command not found
+/var/spool/slurmd/job10308472/slurm_script: line 37: python: command not found

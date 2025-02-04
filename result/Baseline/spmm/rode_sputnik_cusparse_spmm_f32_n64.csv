@@ -1,0 +1,7 @@
+dataSet,rows_,columns_,nonzeros_,sputnik,Sputnik_gflops,cusparse,cuSPARSE_gflops,rode,ours_gflops
+amazon0505, 410236, 410236, 3356824, 21.882448, 19.635531, 4.597661, 93.454800, 0.611091, 703.124972
+packing-500x100x100-b050, 2145852, 2145852, 17488243, 8.219037, 544.709834, 5.933325, 754.549995, 2.586422, 1730.958678
+com-Orkut, 3072441, 3072441, 117185083, 39.376579, 761.858520, 42.236916, 710.264514, 30.428476, 985.898252
+italy_osm, 6686493, 6686493, 7013978, 7.576621, 236.989351, 5.183658, 346.392173, 3.973565, 451.880970
+road_usa, 23947347, 23947347, 28854312, 0.000000, inf, 0.000000, inf, 0.000000, inf
+CUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encountered

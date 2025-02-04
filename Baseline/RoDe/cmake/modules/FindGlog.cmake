@@ -1,13 +1,13 @@
 include(FindPackageHandleStandardArgs)
 
-set(GLOG_ROOT_DIR "/home/cunyang/workspace/" CACHE PATH "Glog root directory")
+set(GLOG_ROOT_DIR "/home/cunyang/software/" CACHE PATH "Glog root directory")
 
 find_path(GLOG_INCLUDE_DIR glog/logging.h PATHS ${GLOG_ROOT_DIR})
 
 find_library(GLOG_LIBRARY glog PATHS ${GLOG_ROOT_DIR} PATH_SUFFIXES lib lib64)
 
-set(GLOG_INCLUDE_DIR "/home/cunyang/workspace/include/glog")
-set(GLOG_LIBRARY "/home/cunyang/workspace/lib/libglog.so")
+set(GLOG_INCLUDE_DIR "/home/cunyang/software/include")
+set(GLOG_LIBRARY "/home/cunyang/software/lib64/libglog.so")
 
 find_package_handle_standard_args(Glog DEFAULT_MSG GLOG_INCLUDE_DIR GLOG_LIBRARY)
 

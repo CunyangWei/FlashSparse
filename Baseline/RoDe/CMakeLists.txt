@@ -24,6 +24,8 @@ SET(CMAKE_CUDA_ARCHITECTURES "80;90")  # 仅支持 sm_80 和 sm_90
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules)
 include(cmake/Dependencies.cmake)
+find_package(Glog REQUIRED)
+include_directories(${GLOG_INCLUDE_DIRS})
 
 set(UTILS_LIBS ${PROJECT_SOURCE_DIR}/utils)
 set(Sputnik_SPMM_LIBS ${PROJECT_SOURCE_DIR}/Sputnik_SpMM)

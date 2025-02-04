@@ -1,0 +1,2 @@
+dataSet,rows_,columns_,nonzeros_,sputnik,Sputnik_gflops,cusparse,cuSPARSE_gflops,rode,ours_gflops
+amazon0505, 410236, 410236, 3356824, 6.885552, 124.804361, 1.559853, 550.915413, 0.742573, 1157.256180

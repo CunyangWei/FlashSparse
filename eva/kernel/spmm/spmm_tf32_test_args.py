@@ -55,8 +55,14 @@ if __name__ == "__main__":
     # data_path =  project_dir + '/dataset'
     data_path = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/dataset/')
     
+    GPU_name = '0'
+    if len(sys.argv) > 2:
+        GPU_name = sys.argv[2]
+    else:
+        GPU_name = '0'
+
     #result path
-    file_name = project_dir + '/result/FlashSparse/spmm/flashsparse_tf32_' + str(dimN) + '.csv'
+    file_name = project_dir + '/result/FlashSparse/spmm/' + GPU_name + '_flashsparse_tf32_' + str(dimN) + '.csv'
     head = ['dataSet', 'num_nodes', 'num_edges', '16_1', '8_1', '8_1_balance', '8_1_map']
     with open(file_name, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)

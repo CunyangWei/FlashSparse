@@ -23,8 +23,14 @@ df = pd.read_csv(project_dir + '/dataset/data.csv')
 dimN = int(sys.argv[1])
 print('dimN: ' + str(dimN))
 
+GPU_name = '0'
+if len(sys.argv) > 2:
+    GPU_name = sys.argv[2]
+else:
+    GPU_name = '0'
+
 # file_name = project_dir + '/result/Baseline/spmm/dtc_spmm_f32_n' + str(dimN) + '.csv'
-file_name = project_dir + '/result/Baseline/spmm/my_dtc_spmm_f32_n' + str(dimN) + '.csv'
+file_name = project_dir + '/result/Baseline/spmm/' + GPU_name  + '_dtc_spmm_f32_n' + str(dimN) + '.csv'
 
 
 head = ['dataSet', 'num_nodes', 'num_edges', 'dtc']
@@ -74,7 +80,10 @@ for index, row in df.iterrows():
 
     balance_choice = True
     # exeplan = ExecutionPlan[dset_name][dimN][1] + "_" + ExecutionPlan[dset_name][dimN][2]
-    exeplan = "float4" + "_" + "split"
+    if dimN < 128:
+        exeplan = "float4_nonsplit"
+    else:
+        exeplan = "float4" + "_" + "split"
     if balance_choice == False:
         _, dtc_spmm = DTCSpMM.run_DTCSpMM(X, RowWindowOffset, TCblocktileId, TCblockoffset, SparseAToXindex, num_rows, num_nnz, exeplan)
     else:

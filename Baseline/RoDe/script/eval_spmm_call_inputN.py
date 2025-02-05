@@ -11,12 +11,16 @@ current_dir = os.path.dirname(__file__)
 project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
 data_dir = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/dataset/')
 inputN = sys.argv[1]
-
+GPU_name = '0'
+if len(sys.argv) > 2:
+    GPU_name = sys.argv[2]
+else:
+    GPU_name = '0'
 # df = pd.read_csv(project_dir + '/dataset/data_filter.csv')
 # df = pd.read_csv(project_dir + '/result/ref/baseline_h100_spmm_128.csv')
 df = pd.read_csv(project_dir + '/dataset/data.csv')
 #result path
-file_name = project_dir + '/result/Baseline/spmm/rode_sputnik_cusparse_spmm_f32_n' + inputN + '.csv'
+file_name = project_dir + '/result/Baseline/spmm/' + GPU_name + '_rode_sputnik_cusparse_spmm_f32_n' + inputN + '.csv'
 head = ['dataSet','rows_','columns_','nonzeros_','sputnik','Sputnik_gflops','cusparse','cuSPARSE_gflops','rode','ours_gflops']
 
 with open(file_name, 'w', newline='') as csvfile:

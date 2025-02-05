@@ -63,9 +63,15 @@ if __name__ == "__main__":
     project_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
     data_dir = os.getenv('SPMM_DATADIR', '/home/cunyang/workspace/dataset/')
     
+
+    GPU_name = '0'
+    if len(sys.argv) > 2:
+        GPU_name = sys.argv[2]
+    else:
+        GPU_name = '0'
     #result path
     # file_name = project_dir + '/result/Baseline/spmm/base_spmm_f32_n' + str(dimN) + '.csv'
-    file_name = project_dir + '/result/Baseline/spmm/advisor_tcgnn_gespmm_f32_n' + str(dimN) + '.csv'
+    file_name = project_dir + '/result/Baseline/spmm/' + GPU_name  + '_advisor_tcgnn_gespmm_f32_n' + str(dimN) + '.csv'
     head = ['dataSet', 'num_nodes', 'num_edges', 'advisor', 'tcgnn', 'gespmm']
     with open(file_name, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)

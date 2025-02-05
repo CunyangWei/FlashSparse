@@ -109,6 +109,14 @@ int main(int argc,char **argv) {
     cudaEventCreate(&event1);
     cudaEventCreate(&event2);
 
+		// warmup
+    for(int i=0; i < ITER; ++i)
+        SPC::SputnikSpmm(m,c_sm.Columns(),n,c_sm.Nonzeros(),
+                    c_sm.RowIndices(),c_sm.Values(),c_sm.RowOffsets(),c_sm.ColumnIndices(),
+                    d_B.Values(),
+                    d_C1,
+                    stream1);
+
     cudaDeviceSynchronize();
     cudaEventRecord(event1,0);
     for(int i=0; i < ITER; ++i)

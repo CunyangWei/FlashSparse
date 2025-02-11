@@ -1,0 +1,3 @@
+dataSet,num_nodes,num_edges,advisor,tcgnn,gespmm
+amazon0505,410236,410236,5.7869,1.4624,3.6225
+packing-500x100x100-b050,2145852,2145852,100000,10000000,0.0

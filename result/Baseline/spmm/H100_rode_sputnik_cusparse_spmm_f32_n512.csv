@@ -1,0 +1,5 @@
+dataSet,rows_,columns_,nonzeros_,sputnik,cusparse,rode
+amazon0505, 410236, 410236, 3356824, 2.741930, 1253.638220, 1.780042, 1931.071495, 1.256342, 2736.027810
+packing-500x100x100-b050, 2145852, 2145852, 17488243, 0.000000, inf, 0.000000, inf, 0.000000, inf
+CUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredcom-Orkut, 3072441, 3072441, 117185083, 0.000000, inf, 0.000000, inf, 0.000000, inf
+CUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encounteredCUDA Error: an illegal memory access was encountereditaly_osmroad_usa

@@ -95,11 +95,11 @@ int main(int argc,char **argv) {
     float* d_C;
     cudaMalloc((void**)&d_C,sizeof(float)*m*n);
 
-    float* d_C1;
-    cudaMalloc((void**)&d_C1,sizeof(float)*m*n);
+		//float* d_C1;
+    //cudaMalloc((void**)&d_C1,sizeof(float)*m*n);
 
-    float* d_C2;
-    cudaMalloc((void**)&d_C2,sizeof(float)*m*n);
+    //float* d_C2;
+    //cudaMalloc((void**)&d_C2,sizeof(float)*m*n);
 
     float* diff;
     cudaMalloc((void**)&diff,sizeof(float)*1);
@@ -108,13 +108,12 @@ int main(int argc,char **argv) {
     cudaEvent_t event1,event2;
     cudaEventCreate(&event1);
     cudaEventCreate(&event2);
-
 		// warmup
     for(int i=0; i < ITER; ++i)
         SPC::SputnikSpmm(m,c_sm.Columns(),n,c_sm.Nonzeros(),
                     c_sm.RowIndices(),c_sm.Values(),c_sm.RowOffsets(),c_sm.ColumnIndices(),
                     d_B.Values(),
-                    d_C1,
+                    d_C,
                     stream1);
 
     cudaDeviceSynchronize();
@@ -123,7 +122,7 @@ int main(int argc,char **argv) {
         SPC::SputnikSpmm(m,c_sm.Columns(),n,c_sm.Nonzeros(),
                     c_sm.RowIndices(),c_sm.Values(),c_sm.RowOffsets(),c_sm.ColumnIndices(),
                     d_B.Values(),
-                    d_C1,
+                    d_C,
                     stream1);
 
     cudaEventRecord(event2,0);
@@ -137,13 +136,16 @@ int main(int argc,char **argv) {
 
     printf(", %f, %f",tot_ms/(float)ITER,gflops);
 
-
     cuSparse_SPMM<float> cu_sp;
 
     cu_sp.Preprocess(m,c_sm.Columns(),c_sm.Nonzeros(),
                     c_sm.RowOffsets(),c_sm.ColumnIndices(),c_sm.Values());
 
-    cudaDeviceSynchronize();
+       
+    for(int i=0; i < ITER; ++i)	
+        cu_sp.Process(n,d_B.Values(),d_C);
+		
+		cudaDeviceSynchronize();
     cudaEventRecord(event1,0);
 
     for(int i=0; i < ITER; ++i)
@@ -160,7 +162,6 @@ int main(int argc,char **argv) {
 
     printf(", %f, %f",tot_ms/(float)ITER,gflops);
 
-
     cudaDeviceSynchronize();
     cudaEventRecord(event1,0);
 
@@ -169,13 +170,13 @@ int main(int argc,char **argv) {
             RoDeSpmm_n32(c_sm.n_segs, c_sm.n_segs_residue, c_sm.Columns(), n,
                            c_sm.Values(), c_sm.ColumnIndices(), c_sm.RowOffsets(),
                            c_sm.seg_row_indices, c_sm.seg_row_indices_residue, c_sm.seg_st_offsets,
-                           d_B.Values(), d_C2, stream1, stream2);
+                           d_B.Values(), d_C, stream1, stream2);
     } else {
         for(int i = 0; i < ITER; ++i)
             RoDeSpmm_n128(c_sm.n_segs, c_sm.n_segs_residue, c_sm.Columns(), n,
                            c_sm.Values(), c_sm.ColumnIndices(), c_sm.RowOffsets(),
                            c_sm.seg_row_indices, c_sm.seg_row_indices_residue, c_sm.seg_st_offsets,
-                           d_B.Values(), d_C2, stream1, stream2);
+                           d_B.Values(), d_C, stream1, stream2);
     }
 
     cudaEventRecord(event2,0);
@@ -194,8 +195,8 @@ int main(int argc,char **argv) {
     // MatrixDiff<<<(m*n+31)/32,32>>>(m*n,diff,d_C,d_C2);
 
     cudaFree(d_C);
-    cudaFree(d_C1);
-    cudaFree(d_C2);
+		//cudaFree(d_C1);
+    //cudaFree(d_C2);
     cudaFree(diff);
 	
     return 0;

@@ -63,7 +63,8 @@ if __name__ == "__main__":
 
     #result path
     file_name = project_dir + '/result/FlashSparse/spmm/' + GPU_name + '_flashsparse_tf32_' + str(dimN) + '.csv'
-    head = ['dataSet', 'num_nodes', 'num_edges', '16_1', '8_1', '8_1_balance', '8_1_map']
+    #head = ['dataSet', 'num_nodes', 'num_edges', '16_1', '8_1', '8_1_balance', '8_1_map']
+    head = ['dataSet', 'num_nodes', 'num_edges', '8_1_balance']
     with open(file_name, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
         csv_writer.writerow(head)
@@ -82,20 +83,20 @@ if __name__ == "__main__":
         res_temp.append(row.iloc[2])
 
         # 16x1
-        spmm_tcu_16_1 = fs_tf32_16_1(row.iloc[0], dimN, epoches, partsize_t, data_path,  16, 4)
-        res_temp.append(spmm_tcu_16_1)
+        #spmm_tcu_16_1 = fs_tf32_16_1(row.iloc[0], dimN, epoches, partsize_t, data_path,  16, 4)
+        #res_temp.append(spmm_tcu_16_1)
         
         # 8x1
-        spmm_tcu_8_1 = fs_tf32_8_1(row.iloc[0], dimN, epoches, partsize_t, data_path,  8, 4)
-        res_temp.append(spmm_tcu_8_1)
+        #spmm_tcu_8_1 = fs_tf32_8_1(row.iloc[0], dimN, epoches, partsize_t, data_path,  8, 4)
+        #res_temp.append(spmm_tcu_8_1)
 
         # 8x1_balance
         spmm_tcu_8_1_balance = fs_tf32_8_1_balance(row.iloc[0], dimN, epoches, partsize_t, data_path,  8, 4)
         res_temp.append(spmm_tcu_8_1_balance)
         
         # test-map
-        spmm_tcu_8_1_map = fs_tf32_8_1_map(row.iloc[0], dimN, epoches, partsize_t, data_path,  8, 4)
-        res_temp.append(spmm_tcu_8_1_map)
+        #spmm_tcu_8_1_map = fs_tf32_8_1_map(row.iloc[0], dimN, epoches, partsize_t, data_path,  8, 4)
+        #res_temp.append(spmm_tcu_8_1_map)
 
             
         with open(file_name, 'a', newline='') as csvfile:

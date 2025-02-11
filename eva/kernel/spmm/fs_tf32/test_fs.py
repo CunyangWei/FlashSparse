@@ -40,7 +40,7 @@ def fs_tf32_8_1(data, epoches, dimN, partsize_t, data_path,  window, wide):
     '''
     spmm_ms_avg = round((spmm_ms_avg.item()),2)
     print(str(dimN) + '-' + data + 'tcu_8_1' + '-' +str(spmm_ms_avg))
-    return X_prime, spmm_ms_avg
+    return spmm_ms_avg
 
 def fs_tf32_8_1_map(data, epoches, dimN, partsize_t, data_path,  window, wide):
 

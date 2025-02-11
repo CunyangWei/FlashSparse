@@ -1,0 +1,1103 @@
+Loading cuda/gcc/11.3.0/zen2/12.3.0
+  Loading requirement: gcc/11.3.0
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+0
+dataSet      amazon0505
+num_nodes        410236
+num_edges        410236
+NNZ             3356824
+Name: 0, dtype: object
+amazon0505
+1
+dataSet      packing-500x100x100-b050
+num_nodes                     2145852
+num_edges                     2145852
+NNZ                          34976486
+Name: 1, dtype: object
+packing-500x100x100-b050
+2
+dataSet      com-Orkut
+num_nodes      3072441
+num_edges      3072441
+NNZ          234370166
+Name: 2, dtype: object
+com-Orkut
+3
+dataSet      italy_osm
+num_nodes      6686493
+num_edges      6686493
+NNZ           14027956
+Name: 3, dtype: object
+italy_osm
+4
+dataSet      road_usa
+num_nodes    23947347
+num_edges    23947347
+NNZ          57708624
+Name: 4, dtype: object
+road_usa
+Execution time:  475.97266459465027
+dynamic_shared_size: 164
+	 GPU Preprocess time: 0.0196541 seconds
+TC_Blocks:	315485
+Exp_Edges:	40382080
+Not supported exe plan!NVIDIA H100 80GB HBM3
+dimN: 64
+/home/cunyang/scratch.bhatele-lab/dataset/amazon0505/amazon0505.npz
+64-amazon0505 advisor-0.6652
+64-amazon0505 tcgnn-0.658
+64-amazon0505 gespmm-0.3917
+amazon0505 is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/packing-500x100x100-b050/packing-500x100x100-b050.npz
+64-packing-500x100x100-b050 advisor-4.2524
+64-packing-500x100x100-b050 gespmm-3.023
+packing-500x100x100-b050 is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/com-Orkut/com-Orkut.npz
+64-com-Orkut advisor-43.0255
+64-com-Orkut gespmm-25.3724
+com-Orkut is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/italy_osm/italy_osm.npz
+64-italy_osm advisor-5.7717
+64-italy_osm gespmm-3.3153
+italy_osm is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/road_usa/road_usa.npz
+64-road_usa advisor-24.2286
+64-road_usa gespmm-13.8126
+road_usa is success
+
+All is success
+NVIDIA H100 80GB HBM3
+dimN: 64
+64-amazon0505tcu_8_1_balance-0.21
+amazon0505 is success
+
+64-packing-500x100x100-b050tcu_8_1_balance-1.18
+packing-500x100x100-b050 is success
+
+64-com-Orkuttcu_8_1_balance-16.54
+com-Orkut is success
+
+64-italy_osmtcu_8_1_balance-1.83
+italy_osm is success
+
+64-road_usatcu_8_1_balance-7.5
+road_usa is success
+
+All is success
+	 GPU Preprocess time: 0.0231953 seconds
+	 GPU Preprocess time: 0.0984289 seconds
+	 GPU Preprocess time: 0.866753 seconds
+	 GPU Preprocess time: 0.0461024 seconds
+	 GPU Preprocess time: 0.220768 seconds
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3405403 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 128 /home/cunyang/scratch.bhatele-lab/dataset/road_usa/road_usa.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n128.csv
+0
+dataSet      amazon0505
+num_nodes        410236
+num_edges        410236
+NNZ             3356824
+Name: 0, dtype: object
+amazon0505
+1
+dataSet      packing-500x100x100-b050
+num_nodes                     2145852
+num_edges                     2145852
+NNZ                          34976486
+Name: 1, dtype: object
+packing-500x100x100-b050
+2
+dataSet      com-Orkut
+num_nodes      3072441
+num_edges      3072441
+NNZ          234370166
+Name: 2, dtype: object
+com-Orkut
+3
+dataSet      italy_osm
+num_nodes      6686493
+num_edges      6686493
+NNZ           14027956
+Name: 3, dtype: object
+italy_osm
+4
+dataSet      road_usa
+num_nodes    23947347
+num_edges    23947347
+NNZ          57708624
+Name: 4, dtype: object
+road_usa
+Execution time:  353.03137397766113
+dynamic_shared_size: 164
+	 GPU Preprocess time: 0.00387811 seconds
+TC_Blocks:	315485
+Exp_Edges:	40382080
+dynamic_shared_size: 172
+	 GPU Preprocess time: 0.0165039 seconds
+TC_Blocks:	2423307
+Exp_Edges:	310183296
+dynamic_shared_size: 60012
+	 GPU Preprocess time: 0.274245 seconds
+TC_Blocks:	26269125
+Exp_Edges:	-932519296
+dynamic_shared_size: 68
+	 GPU Preprocess time: 0.00870441 seconds
+TC_Blocks:	1344528
+Exp_Edges:	172099584
+dynamic_shared_size: 68
+dimN: 128
+amazon0505
+amazon0505
+packing-500x100x100-b050
+packing-500x100x100-b050
+com-Orkut
+com-Orkut
+italy_osm
+italy_osm
+road_usa
+road_usa
+	 GPU Preprocess time: 0.0291822 seconds
+TC_Blocks:	6955459
+Exp_Edges:	890298752
+/var/spool/slurmd/job10400680/slurm_script: line 16: 3405749 Segmentation fault      python spmm_baselines.py $DIMN H100
+NVIDIA H100 80GB HBM3
+dimN: 128
+128-amazon0505tcu_8_1_balance-0.43
+amazon0505 is success
+
+128-packing-500x100x100-b050tcu_8_1_balance-2.27
+packing-500x100x100-b050 is success
+
+128-com-Orkuttcu_8_1_balance-32.84
+com-Orkut is success
+
+128-italy_osmtcu_8_1_balance-3.59
+italy_osm is success
+
+128-road_usatcu_8_1_balance-14.57
+road_usa is success
+
+All is success
+	 GPU Preprocess time: 0.0328188 seconds
+	 GPU Preprocess time: 0.0962616 seconds
+	 GPU Preprocess time: 0.827164 seconds
+	 GPU Preprocess time: 0.0480222 seconds
+	 GPU Preprocess time: 0.208615 seconds
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+/bin/sh: line 1: 3409590 Segmentation fault      /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 256 /home/cunyang/scratch.bhatele-lab/dataset/road_usa/road_usa.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n256.csv
+0
+dataSet      amazon0505
+num_nodes        410236
+num_edges        410236
+NNZ             3356824
+Name: 0, dtype: object
+amazon0505
+1
+dataSet      packing-500x100x100-b050
+num_nodes                     2145852
+num_edges                     2145852
+NNZ                          34976486
+Name: 1, dtype: object
+packing-500x100x100-b050
+2
+dataSet      com-Orkut
+num_nodes      3072441
+num_edges      3072441
+NNZ          234370166
+Name: 2, dtype: object
+com-Orkut
+3
+dataSet      italy_osm
+num_nodes      6686493
+num_edges      6686493
+NNZ           14027956
+Name: 3, dtype: object
+italy_osm
+4
+dataSet      road_usa
+num_nodes    23947347
+num_edges    23947347
+NNZ          57708624
+Name: 4, dtype: object
+road_usa
+Execution time:  912.4355728626251
+dynamic_shared_size: 164
+	 GPU Preprocess time: 0.00370709 seconds
+TC_Blocks:	315485
+Exp_Edges:	40382080
+dynamic_shared_size: 172
+	 GPU Preprocess time: 0.0160443 seconds
+TC_Blocks:	2423307
+Exp_Edges:	310183296
+dynamic_shared_size: 60012
+	 GPU Preprocess time: 0.273922 seconds
+TC_Blocks:	26269125
+Exp_Edges:	-932519296
+dynamic_shared_size: 68
+	 GPU Preprocess time: 0.00774053 seconds
+TC_Blocks:	1344528
+Exp_Edges:	172099584
+dynamic_shared_size: 68
+dimN: 256
+amazon0505
+amazon0505
+packing-500x100x100-b050
+packing-500x100x100-b050
+com-Orkut
+com-Orkut
+italy_osm
+italy_osm
+road_usa
+road_usa
+	 GPU Preprocess time: 0.0291122 seconds
+TC_Blocks:	6955459
+Exp_Edges:	890298752
+/var/spool/slurmd/job10400680/slurm_script: line 16: 3410719 Segmentation fault      python spmm_baselines.py $DIMN H100
+NVIDIA H100 80GB HBM3
+dimN: 256
+256-amazon0505tcu_8_1_balance-0.89
+amazon0505 is success
+
+256-packing-500x100x100-b050tcu_8_1_balance-4.41
+packing-500x100x100-b050 is success
+
+256-com-Orkuttcu_8_1_balance-65.8
+com-Orkut is success
+
+256-italy_osmtcu_8_1_balance-7.12
+italy_osm is success
+
+256-road_usatcu_8_1_balance-28.69
+road_usa is success
+
+All is success
+	 GPU Preprocess time: 0.015055 seconds
+	 GPU Preprocess time: 0.0959829 seconds
+	 GPU Preprocess time: 0.873314 seconds
+	 GPU Preprocess time: 0.0475699 seconds
+	 GPU Preprocess time: 0.220515 seconds
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseCreate(): CUDA context cannot be initialized
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM_bufferSize() parameter number 1 (handle) had an illegal value: NULL pointer
+
+ ** On entry to cusparseSpMM() parameter number 1 (handle) had an illegal value: NULL pointer
+
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3414577 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 512 /home/cunyang/scratch.bhatele-lab/dataset/italy_osm/italy_osm.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n512.csv
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3414597 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 512 /home/cunyang/scratch.bhatele-lab/dataset/road_usa/road_usa.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n512.csv
+0
+dataSet      amazon0505
+num_nodes        410236
+num_edges        410236
+NNZ             3356824
+Name: 0, dtype: object
+amazon0505
+1
+dataSet      packing-500x100x100-b050
+num_nodes                     2145852
+num_edges                     2145852
+NNZ                          34976486
+Name: 1, dtype: object
+packing-500x100x100-b050
+2
+dataSet      com-Orkut
+num_nodes      3072441
+num_edges      3072441
+NNZ          234370166
+Name: 2, dtype: object
+com-Orkut
+3
+dataSet      italy_osm
+num_nodes      6686493
+num_edges      6686493
+NNZ           14027956
+Name: 3, dtype: object
+italy_osm
+4
+dataSet      road_usa
+num_nodes    23947347
+num_edges    23947347
+NNZ          57708624
+Name: 4, dtype: object
+road_usa
+Execution time:  567.811398267746
+dynamic_shared_size: 164
+	 GPU Preprocess time: 0.00358925 seconds
+TC_Blocks:	315485
+Exp_Edges:	40382080
+dynamic_shared_size: 172
+	 GPU Preprocess time: 0.0160987 seconds
+TC_Blocks:	2423307
+Exp_Edges:	310183296
+dynamic_shared_size: 60012
+	 GPU Preprocess time: 0.273043 seconds
+TC_Blocks:	26269125
+Exp_Edges:	-932519296
+dynamic_shared_size: 68
+	 GPU Preprocess time: 0.00789685 seconds
+TC_Blocks:	1344528
+Exp_Edges:	172099584
+dynamic_shared_size: 68
+dimN: 512
+amazon0505
+amazon0505
+packing-500x100x100-b050
+packing-500x100x100-b050
+com-Orkut
+com-Orkut
+italy_osm
+italy_osm
+road_usa
+	 GPU Preprocess time: 0.0288198 seconds
+TC_Blocks:	6955459
+Exp_Edges:	890298752
+Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/DTC-SpMM/run_DTC_SpMM_h100.py", line 90, in <module>
+    _, dtc_spmm = DTCSpMM.run_DTCSpMM_balance(X, TCblockRowid, TCblocktileId, TCblockoffset, SparseAToXindex, num_rows, exeplan)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 45.68 GiB. GPU 0 has a total capacity of 79.21 GiB of which 18.34 GiB is free. Including non-PyTorch memory, this process has 60.86 GiB memory in use. Of the allocated memory 59.49 GiB is allocated by PyTorch, and 792.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+NVIDIA H100 80GB HBM3
+dimN: 512
+/home/cunyang/scratch.bhatele-lab/dataset/amazon0505/amazon0505.npz
+512-amazon0505 advisor-2.8654
+512-amazon0505 tcgnn-1.1031
+512-amazon0505 gespmm-1.8098
+amazon0505 is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/packing-500x100x100-b050/packing-500x100x100-b050.npz
+512-packing-500x100x100-b050 advisor-14.0984
+512-packing-500x100x100-b050 gespmm-9.5558
+packing-500x100x100-b050 is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/com-Orkut/com-Orkut.npz
+512-com-Orkut advisor-156.1747
+512-com-Orkut gespmm-122.308
+com-Orkut is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/italy_osm/italy_osm.npz
+Subprocess failed: Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 48, in <module>
+    res = test(data, epoches, dimN, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 38, in test
+    execution_time = kernel(inputInfo, epoches, dataset)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 11, in kernel
+    X_prime, spmm_ms_avg = GNNAdvisor_kernel.forward(dataset.x, inputInfo.row_pointers, inputInfo.column_index, inputInfo.degrees, inputInfo.partPtr, inputInfo.part2Node, inputInfo.partSize, inputInfo.dimWorker, inputInfo.warpPerBlock, epoches, 10)
+RuntimeError: numel needs to be smaller than int32_t max; otherwise, please use packed_accessor64
+
+512-italy_osm advisor-100000
+512-italy_osm gespmm-0.0
+italy_osm is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/road_usa/road_usa.npz
+Subprocess failed: Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 48, in <module>
+    res = test(data, epoches, dimN, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 18, in test
+    dataset.to(device)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/mdataset.py", line 99, in to
+    self.x =  self.x.to(device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 45.68 GiB. GPU 0 has a total capacity of 79.21 GiB of which 31.04 GiB is free. Process 3414960 has 47.64 GiB memory in use. Including non-PyTorch memory, this process has 518.00 MiB memory in use. Of the allocated memory 0 bytes is allocated by PyTorch, and 0 bytes is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+512-road_usa advisor-100000
+Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/spmm_baselines.py", line 116, in <module>
+    spmm_gespmm = gespmm_test(row.iloc[0], dimN, epoches, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/spmm_baselines.py", line 36, in gespmm_test
+    spmm = test_gespmm.test(data, epoches, dimN, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/gespmm/test_gespmm.py", line 19, in test
+    inputInfo.init_embedding(dimN)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/gespmm/mdataset.py", line 54, in init_embedding
+    self.x = self.x1.cuda()
+RuntimeError: CUDA error: context is destroyed
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+/var/spool/slurmd/job10400680/slurm_script: line 16: 3417021 Killed                  python spmm_tf32_test_args.py $DIMN H100
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3417938 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 1024 /home/cunyang/scratch.bhatele-lab/dataset/packing-500x100x100-b050/packing-500x100x100-b050.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n1024.csv
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3417958 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 1024 /home/cunyang/scratch.bhatele-lab/dataset/com-Orkut/com-Orkut.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n1024.csv
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3418047 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 1024 /home/cunyang/scratch.bhatele-lab/dataset/italy_osm/italy_osm.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n1024.csv
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+/bin/sh: line 1: 3418069 Aborted                 /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/Baseline/RoDe/build/eval/eval_spmm_f32_inputN 1024 /home/cunyang/scratch.bhatele-lab/dataset/road_usa/road_usa.mtx >> /scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/result/Baseline/spmm/H100_rode_sputnik_cusparse_spmm_f32_n1024.csv
+0
+dataSet      amazon0505
+num_nodes        410236
+num_edges        410236
+NNZ             3356824
+Name: 0, dtype: object
+amazon0505
+1
+dataSet      packing-500x100x100-b050
+num_nodes                     2145852
+num_edges                     2145852
+NNZ                          34976486
+Name: 1, dtype: object
+packing-500x100x100-b050
+2
+dataSet      com-Orkut
+num_nodes      3072441
+num_edges      3072441
+NNZ          234370166
+Name: 2, dtype: object
+com-Orkut
+3
+dataSet      italy_osm
+num_nodes      6686493
+num_edges      6686493
+NNZ           14027956
+Name: 3, dtype: object
+italy_osm
+4
+dataSet      road_usa
+num_nodes    23947347
+num_edges    23947347
+NNZ          57708624
+Name: 4, dtype: object
+road_usa
+Execution time:  164.34188675880432
+dynamic_shared_size: 164
+	 GPU Preprocess time: 0.0187801 seconds
+TC_Blocks:	315485
+Exp_Edges:	40382080
+dynamic_shared_size: 172
+	 GPU Preprocess time: 0.0160443 seconds
+TC_Blocks:	2423307
+Exp_Edges:	310183296
+dynamic_shared_size: 60012
+	 GPU Preprocess time: 0.273083 seconds
+TC_Blocks:	26269125
+Exp_Edges:	-932519296
+dynamic_shared_size: 68
+	 GPU Preprocess time: 0.00777591 seconds
+TC_Blocks:	1344528
+Exp_Edges:	172099584
+dynamic_shared_size: 68
+/var/spool/slurmd/job10400680/slurm_script: line 16: 3418107 Killed                  python run_DTC_SpMM_h100.py $DIMN H100
+NVIDIA H100 80GB HBM3
+dimN: 1024
+/home/cunyang/scratch.bhatele-lab/dataset/amazon0505/amazon0505.npz
+1024-amazon0505 advisor-5.7869
+1024-amazon0505 tcgnn-1.4624
+1024-amazon0505 gespmm-3.6225
+amazon0505 is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/packing-500x100x100-b050/packing-500x100x100-b050.npz
+Subprocess failed: Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 48, in <module>
+    res = test(data, epoches, dimN, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 38, in test
+    execution_time = kernel(inputInfo, epoches, dataset)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 11, in kernel
+    X_prime, spmm_ms_avg = GNNAdvisor_kernel.forward(dataset.x, inputInfo.row_pointers, inputInfo.column_index, inputInfo.degrees, inputInfo.partPtr, inputInfo.part2Node, inputInfo.partSize, inputInfo.dimWorker, inputInfo.warpPerBlock, epoches, 10)
+RuntimeError: numel needs to be smaller than int32_t max; otherwise, please use packed_accessor64
+
+1024-packing-500x100x100-b050 advisor-100000
+1024-packing-500x100x100-b050 gespmm-0.0
+packing-500x100x100-b050 is success
+
+/home/cunyang/scratch.bhatele-lab/dataset/com-Orkut/com-Orkut.npz
+Subprocess failed: Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 48, in <module>
+    res = test(data, epoches, dimN, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 38, in test
+    execution_time = kernel(inputInfo, epoches, dataset)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/advisor/test_advisor.py", line 11, in kernel
+    X_prime, spmm_ms_avg = GNNAdvisor_kernel.forward(dataset.x, inputInfo.row_pointers, inputInfo.column_index, inputInfo.degrees, inputInfo.partPtr, inputInfo.part2Node, inputInfo.partSize, inputInfo.dimWorker, inputInfo.warpPerBlock, epoches, 10)
+RuntimeError: numel needs to be smaller than int32_t max; otherwise, please use packed_accessor64
+
+1024-com-Orkut advisor-100000
+Traceback (most recent call last):
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/spmm_baselines.py", line 116, in <module>
+    spmm_gespmm = gespmm_test(row.iloc[0], dimN, epoches, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/spmm_baselines.py", line 36, in gespmm_test
+    spmm = test_gespmm.test(data, epoches, dimN, data_path)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/gespmm/test_gespmm.py", line 19, in test
+    inputInfo.init_embedding(dimN)
+  File "/scratch/zt1/project/bhatele-lab/user/cunyang/FlashSparse/eva/kernel/spmm/gespmm/mdataset.py", line 54, in init_embedding
+    self.x = self.x1.cuda()
+RuntimeError: CUDA error: context is destroyed
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+/var/spool/slurmd/job10400680/slurm_script: line 16: 3419579 Killed                  python spmm_tf32_test_args.py $DIMN H100
+slurmstepd: error: Detected 3 oom_kill events in StepId=10400680.batch. Some of the step tasks have been OOM Killed.

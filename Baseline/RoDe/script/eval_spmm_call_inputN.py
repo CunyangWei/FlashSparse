@@ -22,7 +22,8 @@ df = pd.read_csv(project_dir + '/dataset/data.csv')
 #result path
 file_name = project_dir + '/result/Baseline/spmm/' + GPU_name + '_rode_sputnik_cusparse_spmm_f32_n' + inputN + '.csv'
 #head = ['dataSet','rows_','columns_','nonzeros_','sputnik','Sputnik_gflops','cusparse','cuSPARSE_gflops','rode','ours_gflops']
-head = ['dataSet','rows_','columns_','nonzeros_','sputnik','cusparse','rode']
+head = ['dataSet','rows_','columns_','nonzeros_','cusparse','cuSPARSE_gflops','rode','ours_gflops']
+#head = ['dataSet','rows_','columns_','nonzeros_','sputnik','cusparse','rode']
 #head = ['dataSet','rows_','columns_','nonzeros_', 'rode','rode_gflops']
 
 with open(file_name, 'w', newline='') as csvfile:

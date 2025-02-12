@@ -108,6 +108,8 @@ int main(int argc,char **argv) {
     cudaEvent_t event1,event2;
     cudaEventCreate(&event1);
     cudaEventCreate(&event2);
+		
+		/*
 		// warmup
     for(int i=0; i < ITER; ++i)
         SPC::SputnikSpmm(m,c_sm.Columns(),n,c_sm.Nonzeros(),
@@ -135,7 +137,7 @@ int main(int argc,char **argv) {
     gflops = (double)ITER * (double)c_sm.Nonzeros() * 2 * n / tot_ms / 1000000;
 
     printf(", %f, %f",tot_ms/(float)ITER,gflops);
-
+*/
     cuSparse_SPMM<float> cu_sp;
 
     cu_sp.Preprocess(m,c_sm.Columns(),c_sm.Nonzeros(),

@@ -24,3 +24,8 @@ TF32-256-1.38 minutes
 TF32-64-0.68 minutes
 TF32-128-0.87 minutes
 TF32-256-1.27 minutes
+TF32-128-0.2 minutes
+TF32-256-0.28 minutes
+TF32-128-0.17 minutes
+TF32-256-0.23 minutes
+TF32-256-0.23 minutes

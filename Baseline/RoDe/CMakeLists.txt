@@ -20,13 +20,19 @@ include(FindCUDA/select_compute_arch)
 
 set(CMAKE_CXX_STANDARD 17)
 
-SET(CMAKE_CUDA_ARCHITECTURES "80;90")  # 仅支持 sm_80 和 sm_90
+SET(CMAKE_CUDA_ARCHITECTURES "80;90")
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules)
-include(cmake/Dependencies.cmake)
-find_package(Glog REQUIRED)
-include_directories(${GLOG_INCLUDE_DIRS})
 
+set(glog_DIR /scratch/zt1/project/bhatele-lab/shared/spmm/glog/install/lib64/cmake/glog)
+include(cmake/Dependencies.cmake)
+find_package(glog REQUIRED)
+
+list(APPEND SPC_LIBS glog::glog) 
+include_directories(${GLOG_INCLUDE_DIRS})
+message(STATUS "Glog found: ${Glog_FOUND}")
+message(STATUS "Glog include dirs: ${GLOG_INCLUDE_DIRS}")
+message(STATUS "Glog libraries: ${GLOG_LIBRARIES}")
 set(UTILS_LIBS ${PROJECT_SOURCE_DIR}/utils)
 set(Sputnik_SPMM_LIBS ${PROJECT_SOURCE_DIR}/Sputnik_SpMM)
 set(Sputnik_SDDMM_LIBS ${PROJECT_SOURCE_DIR}/Sputnik_SDDMM)

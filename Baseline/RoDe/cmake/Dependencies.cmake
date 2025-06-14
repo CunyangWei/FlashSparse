@@ -7,8 +7,9 @@ cuda_find_library(CUSPARSE_LIBRARY cusparse_static)
 list(APPEND SPC_LIBS "cudart_static;cublas_static;cusparse_static;culibos;cublasLt_static")
 
 # Google Glog.
-find_package(Glog REQUIRED)
+find_package(glog REQUIRED)
+list(APPEND SPC_LIBS glog::glog)
 list(APPEND SPC_LIBS ${GLOG_LIBRARIES})
-
+include_directories(${GLOG_INCLUDE_DIRS})
 add_subdirectory(third_party/abseil-cpp)
 list(APPEND SPC_LIBS "absl::random_random")
